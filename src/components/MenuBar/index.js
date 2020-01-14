@@ -7,6 +7,8 @@ import { Highlight as Light } from "styled-icons/material/Highlight"
 import { GridOn as Grid } from "styled-icons/material/GridOn"
 import { List } from "styled-icons/material/List"
 
+import getThemeColor from '../../utils/getThemeColor';
+
 import * as S from "./styles"
 
 const MenuBar = () => {
@@ -26,12 +28,12 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink cover direction="right" bg="#16202c" duration={0.6} to="/" title="Voltar para Home">
+        <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/" title="Voltar para Home">
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink cover direction="right" bg="#16202c" duration={0.6} to="/search/" title="Pesquisar">
+        <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/search/" title="Pesquisar">
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>

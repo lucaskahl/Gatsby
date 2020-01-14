@@ -8,6 +8,7 @@ module.exports = {
     position: `Frontend Developer`,
     description: `A blog about frontend development and other cool stuff.`,
     author: `@LucasKahl`,
+    siteUrl: `https://lucaskahl.com.br`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -39,11 +40,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Lucas Kahl`,
+        short_name: `Lucas Kahl`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#192734`,
+        theme_color: `#192734`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -81,8 +82,9 @@ module.exports = {
         enablePartialUpdates: true,
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`
   ],
 }
